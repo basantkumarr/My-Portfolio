@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymen form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-series;
+            margin: 15px 34px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: rgb(0,0,0);
+background: linear-gradient(142deg, rgba(0,0,0,1) 24%, rgba(121,3,6,1) 70%, rgba(135,8,18,1) 83%, rgba(142,13,6,1) 100%);
+        }
+        h1,h3{
+            color: #fff;
+        }
+        .container {
+            background-color: #240e0e1a;
+            padding: 10px 20px;
+            border: 3px solid lightgray;
+            border-radius: 10px;
+            width: 70%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            border-radius: 8px;
+            /* border: 1px solid black; */
+            padding: 5px;
+            font-size: 15px;
+            outline: none;
+            border: none;
+            padding: 5px;
+            color: black;
+        }
+
+        fieldset {
+            border-radius: 3px;
+            border: 1px solid rgb(4, 4, 4);
+        }
+
+        #btn {
+            background-color: rgb(7, 139, 3);
+            color: white;
+            font-size: 20px;
+            border-radius: 3px;
+            padding: 8px 10px;
+            width: 20%;
+            border: none;
+            font-weight: 600;
+        }
+        #btn:hover{
+            background-color: rgb(3, 103, 3);
+        }
+
+        .paytext {
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .formContent{
+            width: 100vh;
+        }
+        fieldset{
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        textarea{
+            max-width: 100%;
+            min-width: 100%;
+            max-height: 90px;
+            min-height: 90px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="">
+            <div class="formContent">           
+            <h1 class="paytext">Contact Us</h1>
+            <hr>
+            <h3>Contact information</h3>
+            <p> Name: <input type="text" name="name" placeholder="your name"></p>
+            <fieldset>
+                <legend>gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male">
+                    Female <input type="radio" name="gender" id="female">
+                </p>
+            </fieldset>
+            <p>
+                Address: <textarea name="address" placeholder="Your address" id="34" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                Email: <input type="email" name="email" id="email" placeholder="XYZ@gmail.com">
+            </p>
+            <p>
+                Pincode <input type="number" name="pin" placeholder="XXXXXXXXXXXXXXXX" id="pin">
+            </p>
+            <p>
+
+
+            </p>
+            <p>About you:
+                <select name="card_type" id="card_type">
+                    <option value="paytm">--Job--</option>
+                    <option value="fadu">Student</option>
+                    <option value="hp">SDE</option>
+                    <option value="visa">Web Devlovper</option>
+                    <option value="mastercard">Android Devloper</option>
+                </select>
+            </p>
+            <p>
+                Mobile number: <input type="number" name="card_number" id="card_number " placeholder="234233XXXX">
+            </p>
+            
+        </div>
+            <input id="btn" type="submit" value="SUBMIT">
+        </form>
+    </div>
+</body>
+
+</html>
